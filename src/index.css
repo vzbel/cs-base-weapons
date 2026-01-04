@@ -1,0 +1,33 @@
+:root{
+    --dark: rgb(29, 29, 29);
+    --mid-dark: rgb(32, 32, 32);
+    --text-faded: rgb(210, 209, 209);
+    --primary: rgb(81, 125, 255);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid grey; */
+}
+
+.flex{
+    display: flex;
+}
+
+.text-faded{
+    color: var(--text-faded);
+}
+
+a, img{
+    display: block;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 16px;
+}
+
