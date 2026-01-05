@@ -1,0 +1,35 @@
+.card {
+    max-width: 300px;
+    min-height: 430px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    padding: 16px;
+    transition: 0.1s ease-in-out;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card-top{
+    margin-bottom: 32px;
+}
+
+.card-top,
+.card-bottom {
+    width: 100%;
+}
+
+.card-top > img {
+    height: 100%;
+    width: 100%;
+}
+
+.card-title {
+    margin-bottom: 16px;
+    font-size: 22px;
+}
+
+.card-description {
+    font-size: 15px;
+}

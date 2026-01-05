@@ -3,9 +3,6 @@ header{
     border-radius: 4px;
     margin-top: 32px;
     margin-inline: auto;
-    background: linear-gradient(45deg, var(--mid-dark), var(--dark));
-    box-shadow: 4px 4px 16px rgb(35, 35, 35);
-    outline: 1px solid rgb(45, 45, 45);
     padding: 16px;
     gap: 32px;
     align-items: center;
@@ -46,7 +43,7 @@ header{
     background-color: var(--primary);
 }
 
-@media(max-width: 800px){
+@media(max-width: 830px){
     .header-left{
         max-width: none;
     }

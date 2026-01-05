@@ -1,5 +1,5 @@
 :root{
-    --dark: rgb(29, 29, 29);
+    --dark: rgb(40, 40, 40);
     --mid-dark: rgb(32, 32, 32);
     --text-faded: rgb(210, 209, 209);
     --primary: rgb(81, 125, 255);
@@ -9,7 +9,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* outline: 1px solid grey; */
 }
 
 .flex{
@@ -18,6 +17,12 @@
 
 .text-faded{
     color: var(--text-faded);
+}
+
+.bg-card{
+    outline: 1px solid rgb(45, 45, 45);
+    background: linear-gradient(45deg, var(--mid-dark), var(--dark));
+    box-shadow: 4px 4px 16px rgb(35, 35, 35);
 }
 
 a, img{
@@ -30,4 +35,6 @@ button{
     border-radius: 5px;
     padding: 16px;
 }
+
+
 

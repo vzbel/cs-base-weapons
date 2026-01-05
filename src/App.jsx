@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
-import Header from './components/Header';
 import weaponService from "./services/baseWeapons";
+import Header from './components/Header';
+import Card from "./components/Card";
 import './App.css';
 
 function App() {
@@ -26,6 +27,22 @@ function App() {
         ctaText="API Website"
         ctaLink="https://bymykel.com/CSGO-API/"
       />
+      <main className="flex">
+        {
+          weapons.length > 0 && 
+          weapons.map((weapon) => (
+            <Card
+              key={weapon.id}
+              image={{
+                url: weapon.image,
+                alt: weapon.name
+              }} 
+              title={weapon.name}
+              description={weapon.description}
+            />
+          ))
+        }
+      </main>
     </div>
   );
 };

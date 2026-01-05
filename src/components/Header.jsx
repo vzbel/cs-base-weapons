@@ -3,7 +3,7 @@ import "../styles/Header.css";
 // Hero section including a call-to-action (CTA) button
 const Header = (props) => {
     return (
-        <header className="flex">
+        <header className="flex bg-card">
             <div className="header-left">
                 <img 
                     src={props.imageUrl} 
