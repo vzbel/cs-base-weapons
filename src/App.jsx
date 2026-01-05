@@ -1,7 +1,19 @@
-import './App.css'
+import { useState, useEffect } from "react";
 import Header from './components/Header';
+import weaponService from "./services/baseWeapons";
+import './App.css';
 
 function App() {
+  const [weapons, setWeapons] = useState([]);
+
+  useEffect(() => {
+    weaponService
+      .getAll()
+      .then((data) => {
+        setWeapons(data);
+      });
+  }, []);
+
   return (
     <div className="wrapper">
       <Header
